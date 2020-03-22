@@ -17,7 +17,7 @@ class Application
         @@cart << add_item
       end
     elsif req.path.match(/cart/)
-      @@ccar.each do |item|
+      @@cart.each do |item|
         resp.write "#{item}\n"
       end
     elsif req.path.match(/search/)
